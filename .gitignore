@@ -5,3 +5,5 @@
 *.html
 *.pyc
 geckodriver.log
+.venv
+__pycache__/
