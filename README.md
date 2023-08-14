@@ -26,8 +26,6 @@ Distributed under the MIT license. See [LICENSE](./LICENSE) for more information
 4. Run `scrapy runspider scrapy-project/ycombinator/spiders/yscraper.py -o output/output.jl`.
 5. Run `python json_to_csv.py`. This will convert the jl file to a csv file.
 
-## Dataset
-Check out the dataset I published on [Kaggle.com](https://www.kaggle.com/datasets/miguelcorraljr/y-combinator-directory).
 
 ## Attributes
 |  Attribute           |  Description | Data Type  |
@@ -60,3 +58,6 @@ Note: I excluded 'short_description', 'long_description', 'cb_url', and 'linkedi
 | 379        | Reddit       | The frontpage of the internet.            | S05   | Acquired | ['Community', 'Social', 'Social Media', 'Social Network'] | San Francisco | US      |              | 1            | ['Steve Huffman']                                    | 201       | http://reddit.com        |   |
 | 439        | Coinbase     | Buy, sell, and manage cryptocurrencies.   | S12   | Public   | ['Crypto / Web3']                                         | San Francisco | US      | 2012         | 1            | ['Brian Armstrong']                                  | 6112      | https://www.coinbase.com |   |
 | 531        | DoorDash     | Restaurant delivery.                      | S13   | Public   | ['E-commerce', 'Marketplace']                             | San Francisco | US      | 2013         | 3            | ['Andy Fang', 'Stanley Tang', 'Tony Xu']             | 8600      | http://doordash.com      |   |
+
+## Dataset
+Check out the dataset Miguel published on [Kaggle.com](https://www.kaggle.com/datasets/miguelcorraljr/y-combinator-directory).
