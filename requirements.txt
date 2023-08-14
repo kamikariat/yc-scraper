@@ -2,3 +2,4 @@ pandas
 scrapy
 selenium
 tqdm
+ipykernal
