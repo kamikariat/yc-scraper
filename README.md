@@ -5,11 +5,11 @@ I built YC-Scraper to create a dataset of all the companies in the [Y Combinator
 Y Combinator is a startup accelerator that has invested in over 4,000 companies that have a combined valuation of over $600B. The overall goal of Y Combinator is to help startups really take off.
 
 ## Requirements
-- pandas
-- python
-- scrapy
-- selenium
-- tqdm
+- python: Base Programming Language (https://www.python.org)
+- scrapy: Extracting Data from Websites (https://scrapy.org/) 
+- pandas: Data Analysis (https://pandas.pydata.org/)
+- selenium: Browser Automation (https://www.selenium.dev/documentation/webdriver/getting_started/)
+- tqdm: Beautiful Progress Bar (https://github.com/tqdm/tqdm)
 
 ## Usage
 1. Clone this repository
