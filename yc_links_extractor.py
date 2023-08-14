@@ -57,7 +57,7 @@ def scroll_to_bottom():
             "window.scrollTo(0, document.body.scrollHeight);")
 
         # wait to load page
-        driver.implicitly_wait(0.5)
+        driver.implicitly_wait(1)
 
         # calculate new scroll height and compare with last scroll height
         new_height = driver.execute_script("return document.body.scrollHeight")
@@ -127,7 +127,12 @@ def yc_links_extractor():
         logging.info("Unchecking batch: {b.text}")
         b.click()
     
+    logging.info("Writing urls to file...")
     write_urls_to_file(ulist)
+    logging.info(f"Done. Wrote {len(ulist)} urls to file.")
+    logging.info("Done.")
+
+    logging.info("Closing driver...")
     driver.quit()
 
 
