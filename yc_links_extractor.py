@@ -2,32 +2,38 @@ import json
 import re
 from time import sleep
 
-from selenium.webdriver import Firefox
+import logging
+
+
+# https://realpython.com/python-logging/#the-logging-module
+logging.basicConfig(level=logging.INFO, filename='script.log', filemode='w', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
+
+from selenium.webdriver import Firefox, Chrome
 from selenium.webdriver.common.by import By
-from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.firefox.options import Options as FireFoxOptions
+from selenium.webdriver.chrome.options import Options as ChromeOptions
 from tqdm import tqdm
 
 
-def make_driver():
+def make_driver(type='firefox'):
     """Creates headless Firefox WebDriver instance."""
-    firefox_options = Options()
-    firefox_options.add_argument('-headless')
-    return Firefox(options=firefox_options)
+    if type == 'chrome':
+        chrome_options = ChromeOptions()
+        chrome_options.add_argument('--headless')
+        return Chrome(options=chrome_options)
+    elif type == 'firefox':
+        firefox_options = FireFoxOptions()
+        firefox_options.add_argument('-headless')
+        return Firefox(options=firefox_options)
+    else:
+        raise ValueError(f"Invalid driver type: {type}")
 
+browser = 'firefox'
+#browser = 'chrome'
 
-driver = make_driver()
-page = "https://www.ycombinator.com/companies"
-
-
-def get_page_source():
-    """Returns the source of the current page."""
-    driver.get(page)
-
-
-def click_see_all_options():
-    """Clicks 'See all options' button to load checkboxes for all batches."""
-    see_all_options = driver.find_element(By.LINK_TEXT, 'See all options')
-    see_all_options.click()
+driver = make_driver(browser) # create driver instance
+page = "https://www.ycombinator.com/companies" # page to scrape
 
 
 def compile_batches():
@@ -51,7 +57,7 @@ def scroll_to_bottom():
             "window.scrollTo(0, document.body.scrollHeight);")
 
         # wait to load page
-        sleep(3)
+        driver.implicitly_wait(0.5)
 
         # calculate new scroll height and compare with last scroll height
         new_height = driver.execute_script("return document.body.scrollHeight")
@@ -77,25 +83,48 @@ def write_urls_to_file(ul: list):
 
 def yc_links_extractor():
     """Run the main script to write all start urls to a file."""
-    print(f"Attempting to scrape links from {page}.")
-    get_page_source()
-    click_see_all_options()
-    # compile an array of batches (checkbox elements)
-    batches = compile_batches()
-    ulist = []
+    logging.info("Starting yc_links_extractor.py")
+    logging.info(f"Using {browser} driver.")
+    logging.info(f"Attempting to scrape links from {page}.")
+
+    # Selenium code: https://www.selenium.dev/documentation/webdriver/getting_started/first_script/
+
+    logging.info(f"Navigating to {page}...")
+    driver.get(page)
+
+    logging.info("Waiting for page to load...")
+    driver.implicitly_wait(0.5)
+    
+    # Finders documentation: https://www.selenium.dev/documentation/webdriver/elements/finders/
+
+    logging.info("Finding 'select_all_options' for 'Batch'...")
+    see_all_options = driver.find_element(By.CLASS_NAME, "wFMmHIyWKCYOnrsVb3Yq")
+    
+    logging.info("Clicking 'select_all_options' for 'Batch'...")
+    see_all_options.click()
+
+    logging.info("Compiling batches...")        
+    batches = list(compile_batches()) # Since compile_batches() is a generator, we need to convert it to a list
+
+    
+    logging.info(f"Found {len(batches)} batches.")
+           
+    ulist = [] # list of list of urls for all batches
+
+    # TQDM Progress Bar: https://github.com/tqdm/tqdm
 
     for b in tqdm(list(batches)):
-        # filter companies
+        logging.info(f"Checking batch: {b.text}")
         b.click()
-
-        # scroll down to load all companies
+        
+        logging.info("Scrolling to bottom of page...")
         scroll_to_bottom()
 
-        # fetch links and append them to ulist
-        urls = [u for u in fetch_url_paths()]
+        logging.info("Fetching links and appending to ulist")
+        urls = [u for u in fetch_url_paths()] # list of urls for current batch
         ulist.extend(urls)
 
-        # uncheck the batch checkbox
+        logging.info("Unchecking batch: {b.text}")
         b.click()
     
     write_urls_to_file(ulist)
