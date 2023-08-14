@@ -6,7 +6,7 @@ import logging
 
 
 # https://realpython.com/python-logging/#the-logging-module
-logging.basicConfig(level=logging.INFO, filename='script.log', filemode='w', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.INFO, filename='output/extract_link_script.log', filemode='w', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 
 from selenium.webdriver import Firefox, Chrome
@@ -77,7 +77,7 @@ def fetch_url_paths():
 
 def write_urls_to_file(ul: list):
     """Appends a list of company urls to a file."""
-    with open('start_urls.txt', 'w') as f:
+    with open('output/start_urls.txt', 'w') as f:
         json.dump(ul, f)
 
 

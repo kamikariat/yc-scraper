@@ -15,7 +15,7 @@ Y Combinator is a startup accelerator that has invested in over 4,000 companies 
 1. Clone this repository
 2. Move to the `yc-scraper` directory
 3. Run `python yc_links_extractor.py`. This will fetch the individual urls for the spider to crawl.
-4. Run `scrapy runspider scrapy-project/spiders/yscraper.py -o output.jl`. This generate a JSON lines file which you can read with Pandas:
+4. Run `scrapy runspider scrapy-project/ycombinator/spiders/yscraper.py -o output/output.jl`. This generate a JSON lines file which you can read with Pandas:
 
 ```python
 df = pd.read_json('yc-scraper/output.jl', lines=True)
@@ -57,9 +57,9 @@ Note: I excluded 'short_description', 'long_description', 'cb_url', and 'linkedi
 | 531        | DoorDash     | Restaurant delivery.                      | S13   | Public   | ['E-commerce', 'Marketplace']                             | San Francisco | US      | 2013         | 3            | ['Andy Fang', 'Stanley Tang', 'Tony Xu']             | 8600      | http://doordash.com      |   |
 
 ## Meta
-Author: Miguel Corral Jr.  
-Email: corraljrmiguel@gmail.com  
-LinkedIn: https://www.linkedin.com/in/imiguel  
-GitHub: https://github.com/corralm
+Author: Tony Kam (code forked and adapted from Miguel Corral Jr.)
+Email: tony.shek.kam@gmail.com
+LinkedIn: https://www.linkedin.com/in/tonyshekkam/
+GitHub: https://github.com/kamikariat
 
 Distributed under the MIT license. See [LICENSE](./LICENSE) for more information.

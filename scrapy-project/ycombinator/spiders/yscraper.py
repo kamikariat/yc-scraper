@@ -4,7 +4,7 @@ import scrapy
 
 def make_start_urls_list():
     """Returns a list with the start urls."""
-    with open('scrapy-project/ycombinator/start_urls.txt', 'r') as f:
+    with open('output/start_urls.txt', 'r') as f:
         return eval(f.read())
 
 
