@@ -1,0 +1,165 @@
+2023-08-13 19:30:06,084 - root - INFO - Starting yc_links_extractor.py
+2023-08-13 19:30:06,084 - root - INFO - Using firefox driver.
+2023-08-13 19:30:06,084 - root - INFO - Attempting to scrape links from https://www.ycombinator.com/companies.
+2023-08-13 19:30:06,084 - root - INFO - Navigating to https://www.ycombinator.com/companies...
+2023-08-13 19:30:07,087 - root - INFO - Waiting for page to load...
+2023-08-13 19:30:07,091 - root - INFO - Finding 'select_all_options' for 'Batch'...
+2023-08-13 19:30:07,212 - root - INFO - Clicking 'select_all_options' for 'Batch'...
+2023-08-13 19:30:07,444 - root - INFO - Compiling batches...
+2023-08-13 19:30:08,114 - root - INFO - Found 39 batches.
+2023-08-13 19:30:08,131 - root - INFO - Checking batch: W241
+2023-08-13 19:30:08,390 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:08,413 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:08,424 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:08,718 - root - INFO - Checking batch: S23209
+2023-08-13 19:30:08,970 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:08,978 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:09,290 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:09,605 - root - INFO - Checking batch: W23271
+2023-08-13 19:30:09,844 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:09,852 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:10,309 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:10,638 - root - INFO - Checking batch: S22234
+2023-08-13 19:30:10,894 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:10,903 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:11,340 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:11,648 - root - INFO - Checking batch: W22401
+2023-08-13 19:30:11,892 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:11,922 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:12,511 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:12,811 - root - INFO - Checking batch: S21393
+2023-08-13 19:30:13,054 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:13,063 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:13,469 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:13,780 - root - INFO - Checking batch: W21336
+2023-08-13 19:30:14,023 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:14,083 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:14,471 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:14,770 - root - INFO - Checking batch: S20207
+2023-08-13 19:30:15,011 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:15,104 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:15,545 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:15,894 - root - INFO - Checking batch: W20227
+2023-08-13 19:30:16,143 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:16,151 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:16,509 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:16,816 - root - INFO - Checking batch: S19175
+2023-08-13 19:30:17,057 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:17,065 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:17,426 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:17,727 - root - INFO - Checking batch: W19197
+2023-08-13 19:30:17,975 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:17,983 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:18,291 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:18,597 - root - INFO - Checking batch: S18132
+2023-08-13 19:30:18,834 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:18,844 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:19,213 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:19,535 - root - INFO - Checking batch: W18147
+2023-08-13 19:30:19,778 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:19,864 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:20,181 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:20,467 - root - INFO - Checking batch: S17125
+2023-08-13 19:30:20,733 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:20,740 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:21,089 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:21,390 - root - INFO - Checking batch: W17116
+2023-08-13 19:30:21,625 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:21,633 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:21,980 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:22,276 - root - INFO - Checking batch: IK1278
+2023-08-13 19:30:22,514 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:22,522 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:22,855 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:23,150 - root - INFO - Checking batch: S16102
+2023-08-13 19:30:23,391 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:23,399 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:23,774 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:24,270 - root - INFO - Checking batch: W16123
+2023-08-13 19:30:24,534 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:24,542 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:24,903 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:25,210 - root - INFO - Checking batch: S15105
+2023-08-13 19:30:25,456 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:25,464 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:25,831 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:26,134 - root - INFO - Checking batch: W15110
+2023-08-13 19:30:26,378 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:26,386 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:26,741 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:27,046 - root - INFO - Checking batch: S1479
+2023-08-13 19:30:27,285 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:27,293 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:27,628 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:27,946 - root - INFO - Checking batch: W1474
+2023-08-13 19:30:28,202 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:28,219 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:28,542 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:28,903 - root - INFO - Checking batch: S1352
+2023-08-13 19:30:29,214 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:29,222 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:29,570 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:29,879 - root - INFO - Checking batch: W1346
+2023-08-13 19:30:30,124 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:30,132 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:30,468 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:30,756 - root - INFO - Checking batch: S1281
+2023-08-13 19:30:31,028 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:31,037 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:31,340 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:31,657 - root - INFO - Checking batch: W1266
+2023-08-13 19:30:31,906 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:31,916 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:32,221 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:32,521 - root - INFO - Checking batch: S1160
+2023-08-13 19:30:32,764 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:32,772 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:33,113 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:33,613 - root - INFO - Checking batch: W1145
+2023-08-13 19:30:33,864 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:33,870 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:34,157 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:34,457 - root - INFO - Checking batch: S1036
+2023-08-13 19:30:34,710 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:34,718 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:35,014 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:35,312 - root - INFO - Checking batch: W1026
+2023-08-13 19:30:35,576 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:35,585 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:35,779 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:36,075 - root - INFO - Checking batch: S0926
+2023-08-13 19:30:36,335 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:36,343 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:36,546 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:36,836 - root - INFO - Checking batch: W0916
+2023-08-13 19:30:37,076 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:37,085 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:37,206 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:37,498 - root - INFO - Checking batch: S0822
+2023-08-13 19:30:37,785 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:37,837 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:38,007 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:38,325 - root - INFO - Checking batch: W0821
+2023-08-13 19:30:38,571 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:38,583 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:38,746 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:39,047 - root - INFO - Checking batch: S0719
+2023-08-13 19:30:39,295 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:39,310 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:39,457 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:39,747 - root - INFO - Checking batch: W0713
+2023-08-13 19:30:39,989 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:39,999 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:40,107 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:40,396 - root - INFO - Checking batch: S0611
+2023-08-13 19:30:40,638 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:40,646 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:40,734 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:41,012 - root - INFO - Checking batch: W067
+2023-08-13 19:30:41,265 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:41,279 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:41,340 - root - INFO - Unchecking batch: {b.text}
+2023-08-13 19:30:41,622 - root - INFO - Checking batch: S058
+2023-08-13 19:30:41,864 - root - INFO - Scrolling to bottom of page...
+2023-08-13 19:30:41,921 - root - INFO - Fetching links and appending to ulist
+2023-08-13 19:30:41,988 - root - INFO - Unchecking batch: {b.text}
