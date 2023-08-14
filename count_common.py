@@ -17,7 +17,7 @@ def count_urls_in_file(file_path):
         print(f"The file '{file_path}' was not found.")
         return 0
 
-file_path = 'start_urls.txt'
+file_path = 'output/start_urls.txt'
 num_urls = count_urls_in_file(file_path)
 print(f"Number of URLs in the file: {num_urls}")
     
