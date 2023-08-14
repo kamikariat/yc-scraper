@@ -4,6 +4,14 @@ I built YC-Scraper to create a dataset of all the companies in the [Y Combinator
 ## About Y Combinator
 Y Combinator is a startup accelerator that has invested in over 4,000 companies that have a combined valuation of over $600B. The overall goal of Y Combinator is to help startups really take off.
 
+## Meta
+- Author: Tony Kam (code forked and adapted from Miguel Corral Jr.)
+- Email: tony.shek.kam@gmail.com
+- LinkedIn: https://www.linkedin.com/in/tonyshekkam/
+- GitHub: https://github.com/kamikariat
+
+Distributed under the MIT license. See [LICENSE](./LICENSE) for more information.
+
 ## Requirements
 - python: Base Programming Language (https://www.python.org)
 - scrapy: Extracting Data from Websites (https://scrapy.org/) 
@@ -15,11 +23,8 @@ Y Combinator is a startup accelerator that has invested in over 4,000 companies 
 1. Clone this repository
 2. Move to the `yc-scraper` directory
 3. Run `python yc_links_extractor.py`. This will fetch the individual urls for the spider to crawl.
-4. Run `scrapy runspider scrapy-project/ycombinator/spiders/yscraper.py -o output/output.jl`. This generate a JSON lines file which you can read with Pandas:
-
-```python
-df = pd.read_json('yc-scraper/output.jl', lines=True)
-```
+4. Run `scrapy runspider scrapy-project/ycombinator/spiders/yscraper.py -o output/output.jl`.
+5. Run `python json_to_csv.py`. This will convert the jl file to a csv file.
 
 ## Dataset
 Check out the dataset I published on [Kaggle.com](https://www.kaggle.com/datasets/miguelcorraljr/y-combinator-directory).
@@ -55,11 +60,3 @@ Note: I excluded 'short_description', 'long_description', 'cb_url', and 'linkedi
 | 379        | Reddit       | The frontpage of the internet.            | S05   | Acquired | ['Community', 'Social', 'Social Media', 'Social Network'] | San Francisco | US      |              | 1            | ['Steve Huffman']                                    | 201       | http://reddit.com        |   |
 | 439        | Coinbase     | Buy, sell, and manage cryptocurrencies.   | S12   | Public   | ['Crypto / Web3']                                         | San Francisco | US      | 2012         | 1            | ['Brian Armstrong']                                  | 6112      | https://www.coinbase.com |   |
 | 531        | DoorDash     | Restaurant delivery.                      | S13   | Public   | ['E-commerce', 'Marketplace']                             | San Francisco | US      | 2013         | 3            | ['Andy Fang', 'Stanley Tang', 'Tony Xu']             | 8600      | http://doordash.com      |   |
-
-## Meta
-Author: Tony Kam (code forked and adapted from Miguel Corral Jr.)
-Email: tony.shek.kam@gmail.com
-LinkedIn: https://www.linkedin.com/in/tonyshekkam/
-GitHub: https://github.com/kamikariat
-
-Distributed under the MIT license. See [LICENSE](./LICENSE) for more information.
